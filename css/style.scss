@@ -1,0 +1,101 @@
+$Red: hsl(0, 100%, 74%);
+$Green: hsl(154, 59%, 51%);
+$Blue: hsl(248, 32%, 49%);
+$Dark-Blue: hsl(249, 10%, 26%);
+$Grayish-Blue: hsl(246, 25%, 77%);
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  max-width: 1440px;
+  font-size: 16px;
+  margin: 0 auto;
+  background-color: $Red;
+  background-image: url('../images/bg-intro-desktop.png');
+}
+
+.signup {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  height: 100vh;
+  color: white;
+  &-message {
+    flex-basis: 39%;
+    h1 {
+      font-size: 2.5em;
+      font-weight: 600;
+      line-height: 1em;
+      margin-bottom: 0.6em;
+    }
+  }
+  &-form {
+    flex-basis: 39%;
+    &-head {
+      border-radius: 4px;
+      font-size: 0.8em;
+      font-weight: 400;
+      width: 100%;
+      text-align: center;
+      padding: 1.2em 0;
+      background-color: $Blue;
+      margin-bottom: 1em;
+      border: none;
+      box-shadow: 0 6px 4px rgba(43, 43, 43, 0.74);
+      span {
+        font-weight: bold;
+      }
+    }
+    &-card {
+      border-radius: 6px;
+      background-color: white;
+      display: flex;
+      flex-flow: column wrap;
+      flex-grow: 1;
+      padding: 1.8em;
+      input {
+        width: 100%;
+        border: 1px solid #cccccc;
+        padding: 0.8em 2em;
+        border-radius: 0.5em;
+        margin-bottom: 1em;
+      }
+      input:focus {
+        outline: none !important;
+        border: 2px solid $Blue;
+      }
+      button {
+        width: 100%;
+        border: none;
+        background-color: $Green;
+        color: white;
+        text-align: center;
+        padding: 1.2em 0;
+        border-radius: 6px;
+        box-shadow: 0 2px 3px green;
+        margin-bottom: 1em;
+        text-transform: uppercase;
+      }
+      p {
+        color: $Grayish-Blue;
+        font-size: 0.6em;
+        text-align: center;
+        span {
+          color: $Red;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

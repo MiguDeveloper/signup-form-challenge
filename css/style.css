@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  max-width: 1440px;
+  font-size: 16px;
+  margin: 0 auto;
+  background-color: #ff7a7a;
+  background-image: url("../images/bg-intro-desktop.png");
+}
+
+.signup {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  height: 100vh;
+  color: white;
+}
+.signup-message {
+  flex-basis: 39%;
+}
+.signup-message h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+  line-height: 1em;
+  margin-bottom: 0.6em;
+}
+.signup-form {
+  flex-basis: 39%;
+}
+.signup-form-head {
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  padding: 1.2em 0;
+  background-color: #6055a5;
+  margin-bottom: 1em;
+  border: none;
+  box-shadow: 0 6px 4px rgba(43, 43, 43, 0.74);
+}
+.signup-form-head span {
+  font-weight: bold;
+}
+.signup-form-card {
+  border-radius: 6px;
+  background-color: white;
+  display: flex;
+  flex-flow: column wrap;
+  flex-grow: 1;
+  padding: 1.8em;
+}
+.signup-form-card input {
+  width: 100%;
+  border: 1px solid #cccccc;
+  padding: 0.8em 2em;
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+}
+.signup-form-card input:focus {
+  outline: none !important;
+  border: 2px solid #6055a5;
+}
+.signup-form-card button {
+  width: 100%;
+  border: none;
+  background-color: #38cc8c;
+  color: white;
+  text-align: center;
+  padding: 1.2em 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 3px green;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+.signup-form-card p {
+  color: #b9b6d3;
+  font-size: 0.6em;
+  text-align: center;
+}
+.signup-form-card p span {
+  color: #ff7a7a;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */
